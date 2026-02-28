@@ -1,146 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="9" passed="9" failed="0" skipped="0">
-  <reporter-output>
-    <line>
-      <![CDATA[testCase01: Go to YouTube.com and Assert you are on the correct URL.Click on "About" at the bottom of the sidebar.Print the message on the screen.]]>
-    </line>
-    <line>
-      <![CDATA[testCase02: Go to the "Films" or "Movies" tabIn the “Top Selling” section, scroll to the extreme right.Apply a Soft Assert on whether the movie is marked “A” for Mature or not.Apply a Soft assert on the movie category to check if it exists ex: "Comedy", "Animation", "Drama".]]>
-    </line>
-    <line>
-      <![CDATA[testCase03: Go to the "Music" tab.In the 1st section, print the name of the playlist on the most right.Soft Assert on whether the number of tracks listed is less than or equal to 50.]]>
-    </line>
-    <line>
-      <![CDATA[testCase04: Go to the "News" tab.Print the title and body of the 1st 3 “Latest News Posts”,along with the sum of the number of likes on all 3 of them. No likes given means 0.]]>
-    </line>
-    <line>
-      <![CDATA[testCase05: Search for each of the items given in the stubs: src/test/resources/data.xlsx. Keep scrolling till the sum of each video's views reach 10 Cr.]]>
-    </line>
-    <line>
-      <![CDATA[testCase05: Search for each of the items given in the stubs: src/test/resources/data.xlsx. Keep scrolling till the sum of each video's views reach 10 Cr.]]>
-    </line>
-    <line>
-      <![CDATA[testCase05: Search for each of the items given in the stubs: src/test/resources/data.xlsx. Keep scrolling till the sum of each video's views reach 10 Cr.]]>
-    </line>
-    <line>
-      <![CDATA[testCase05: Search for each of the items given in the stubs: src/test/resources/data.xlsx. Keep scrolling till the sum of each video's views reach 10 Cr.]]>
-    </line>
-    <line>
-      <![CDATA[testCase05: Search for each of the items given in the stubs: src/test/resources/data.xlsx. Keep scrolling till the sum of each video's views reach 10 Cr.]]>
-    </line>
-  </reporter-output>
-  <suite started-at="2026-02-28T09:52:43Z" name="Test Suite for Buildout" finished-at="2026-02-28T09:55:53Z" duration-ms="189880">
-    <groups>
-    </groups>
-    <test started-at="2026-02-28T09:52:43Z" name="Test Cases for Buildout" finished-at="2026-02-28T09:55:53Z" duration-ms="189880">
-      <class name="demo.TestCases">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T15:22:43Z" name="startBrowser" finished-at="2026-02-28T15:22:45Z" duration-ms="1702" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method signature="testCase01()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T15:22:45Z" name="testCase01" description="Testcase 01: YouTube About Page Validation" finished-at="2026-02-28T15:22:51Z" duration-ms="6350" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[testCase01: Go to YouTube.com and Assert you are on the correct URL.Click on "About" at the bottom of the sidebar.Print the message on the screen.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testCase01 -->
-        <test-method signature="testCase02()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T15:22:51Z" name="testCase02" description="Testcase 02: Movies Tab Soft Assertions" finished-at="2026-02-28T15:22:55Z" duration-ms="3989" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[testCase02: Go to the "Films" or "Movies" tabIn the “Top Selling” section, scroll to the extreme right.Apply a Soft Assert on whether the movie is marked “A” for Mature or not.Apply a Soft assert on the movie category to check if it exists ex: "Comedy", "Animation", "Drama".]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testCase02 -->
-        <test-method signature="testCase03()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T15:22:55Z" name="testCase03" description="Testcase 03: Music Playlist Validation" finished-at="2026-02-28T15:23:01Z" duration-ms="5665" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[testCase03: Go to the "Music" tab.In the 1st section, print the name of the playlist on the most right.Soft Assert on whether the number of tracks listed is less than or equal to 50.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testCase03 -->
-        <test-method signature="testCase04()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T15:23:01Z" name="testCase04" description="Testcase 04: News Posts Likes Summary" finished-at="2026-02-28T15:23:12Z" duration-ms="10762" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[testCase04: Go to the "News" tab.Print the title and body of the 1st 3 “Latest News Posts”,along with the sum of the number of likes on all 3 of them. No likes given means 0.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testCase04 -->
-        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T15:23:12Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T15:23:27Z" duration-ms="14947" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Movies]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[testCase05: Search for each of the items given in the stubs: src/test/resources/data.xlsx. Keep scrolling till the sum of each video's views reach 10 Cr.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testCase05 -->
-        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T15:23:27Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T15:23:31Z" duration-ms="3616" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Music]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[testCase05: Search for each of the items given in the stubs: src/test/resources/data.xlsx. Keep scrolling till the sum of each video's views reach 10 Cr.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testCase05 -->
-        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T15:23:31Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T15:23:40Z" duration-ms="9690" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Games]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[testCase05: Search for each of the items given in the stubs: src/test/resources/data.xlsx. Keep scrolling till the sum of each video's views reach 10 Cr.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testCase05 -->
-        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T15:23:40Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T15:24:42Z" duration-ms="62083" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[India]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[testCase05: Search for each of the items given in the stubs: src/test/resources/data.xlsx. Keep scrolling till the sum of each video's views reach 10 Cr.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testCase05 -->
-        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T15:24:42Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T15:25:53Z" duration-ms="70268" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[UK]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[testCase05: Search for each of the items given in the stubs: src/test/resources/data.xlsx. Keep scrolling till the sum of each video's views reach 10 Cr.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testCase05 -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T15:25:53Z" name="endTest" finished-at="2026-02-28T15:25:53Z" duration-ms="398" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- demo.TestCases -->
-    </test> <!-- Test Cases for Buildout -->
-  </suite> <!-- Test Suite for Buildout -->
-</testng-results>
+<checkstyle version="8.45">
+<file name="C:\Users\gosgo\repos\gokulesh02-ME_QA_XYOUTUBE_SEARCH\src\test\java\demo\TestCases.java">
+</file>
+<file name="C:\Users\gosgo\repos\gokulesh02-ME_QA_XYOUTUBE_SEARCH\src\test\java\demo\utils\ExcelDataProvider.java">
+</file>
+<file name="C:\Users\gosgo\repos\gokulesh02-ME_QA_XYOUTUBE_SEARCH\src\test\java\demo\utils\ExcelReaderUtil.java">
+</file>
+<file name="C:\Users\gosgo\repos\gokulesh02-ME_QA_XYOUTUBE_SEARCH\src\test\java\demo\utils\Helpers.java">
+<error line="34" severity="error" message="USED_SOPL" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineJavaCheck"/>
+</file>
+<file name="C:\Users\gosgo\repos\gokulesh02-ME_QA_XYOUTUBE_SEARCH\src\test\java\demo\wrappers\Wrappers.java">
+<error line="427" severity="error" message="USED_THREAD_SLEEP" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineJavaCheck"/>
+<error line="463" severity="error" message="USED_THREAD_SLEEP" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineJavaCheck"/>
+</file>
+</checkstyle>

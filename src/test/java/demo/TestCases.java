@@ -93,8 +93,8 @@ public class TestCases extends ExcelDataProvider{
     public void testCase02() throws Exception {
         Reporter.log("testCase02: "
                     +"Go to the \"Films\" or \"Movies\" tab"
-                    +"In the “Top Selling” section, scroll to the extreme right."
-                    +"Apply a Soft Assert on whether the movie is marked “A” for Mature or not."
+                    +"In the \"Top Selling\" section, scroll to the extreme right."
+                    +"Apply a Soft Assert on whether the movie is marked \"A\" for Mature or not."
                     +"Apply a Soft assert on the movie category to check if it exists ex: \"Comedy\", \"Animation\", \"Drama\".");
         logCommand("Start Testcase", "testCase02");
 
@@ -133,7 +133,7 @@ public class TestCases extends ExcelDataProvider{
     public void testCase04() throws Exception {
         Reporter.log("testCase04: "
                     +"Go to the \"News\" tab."
-                    +"Print the title and body of the 1st 3 “Latest News Posts”,"
+                    +"Print the title and body of the 1st 3 \"Latest News Posts\","
                     +"along with the sum of the number of likes on all 3 of them. No likes given means 0.");
         logCommand("Start Testcase", "testCase04");
 
