@@ -14,6 +14,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -68,6 +69,8 @@ public class Wrappers {
 
     public void waitForResults() {
         String locator = ".//div[@id='content'][1]/div[position() > 1 and position() < last()]";
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+            .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body")));
         List<WebElement> rows = wait.until(ExpectedConditions.refreshed(
             ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(locator))
         ));
@@ -104,10 +107,12 @@ public class Wrappers {
         Boolean applied = false;
 
         logCommand("filter", filter);
+        // TODO: Implement filter logic based on the provided parameters (filter, position, filterMap)
 
         return applied;
     }
 
+    // Wrapper method for navigating to sidebar tabs
     public Boolean navigateSidebar(String tab) {
         if(tab == null || tab.isBlank()) {
             logCommand("navigateSidebar", "Empty tab");
@@ -139,6 +144,7 @@ public class Wrappers {
         return false;
     }
 
+    // Wrapper method for printing page content like headings and paragraphs
     public Boolean printPageContent() {
         String locator = "//h1 | //h2[contains(@class,'%s')] | //h3 | //p";
         List<WebElement> elements = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(locator)));
@@ -154,6 +160,7 @@ public class Wrappers {
         return true;
     }
 
+    // Wrapper method for validating locator of Film Card
     private String checkFilm(String section, String position) {
         waitForResults();
         if (filmCardlocator != null && !filmCardlocator.isBlank()) {
@@ -198,6 +205,7 @@ public class Wrappers {
         return filmLocator;
     }
 
+    // Wrapper method for validating Film Certificate
     public Boolean checkFilmCertificate(String section, String position) {
         String filmLocator = checkFilm(section, position);
         try {
@@ -222,6 +230,7 @@ public class Wrappers {
         }
     }
 
+    // Wrapper method for validating Film Category
     public Boolean checkFilmCategory(String section, String position) {
         String filmLocator = checkFilm(section, position);
         try {
@@ -251,6 +260,7 @@ public class Wrappers {
         }
     }
 
+    // Wrapper method for validating locator of Music Playlist Card
     private String checkMusic(String section, String position) throws InterruptedException {
         waitForResults();
         if (musicCardLocator != null && !musicCardLocator.isBlank()) {
@@ -299,6 +309,7 @@ public class Wrappers {
         return musicCardLocator;
     }
 
+    // Wrapper method for validating number of tracks in Music Playlist
     public Integer checkMusicTrackCount(String section, String position) throws InterruptedException {
         String musicLocator = checkMusic(section, position);
         try {
@@ -320,6 +331,7 @@ public class Wrappers {
         }
     }
 
+    // Wrapper method for validating locator of News Card
     private String checkNews(String section, String position) throws InterruptedException {
         waitForResults();
         String sectionLocator = "//ytd-rich-shelf-renderer%s";
@@ -363,6 +375,7 @@ public class Wrappers {
         return newsCardLocator;
     }
 
+    // Wrapper method for getting details of News Card
     public Map<String, String> getNewsDetails(String section, String position) throws InterruptedException {
         String newsLocator = checkNews(section, position);
         if (newsLocator == null || newsLocator.isBlank()) {
@@ -390,6 +403,7 @@ public class Wrappers {
         }
     }
 
+    // Wrapper method for getting details of News Post along with likes and comments count
     public Map<String, String> getNewsPost(String section, String position) throws InterruptedException {
         String newsLocator = checkNews(section, position);
         try {
@@ -420,6 +434,7 @@ public class Wrappers {
         }
     }
 
+    // Wrapper method for validating search result details like title, views and posted time
     public Map<String, String> searchResult(String keyword, String position) throws InterruptedException {
         Map<String, String> results = new LinkedHashMap<>();
         String locator = String.format("(//ytd-video-renderer)[%s]", position);

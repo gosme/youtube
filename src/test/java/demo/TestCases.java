@@ -39,6 +39,7 @@ public class TestCases extends ExcelDataProvider{
 
     @BeforeTest
     public void startBrowser() {
+        System.out.println("Starting browser for test execution...");
         System.setProperty("java.util.logging.config.file", "logging.properties");
         Logger.getLogger("org.openqa.selenium.remote.http.WebSocket$Listener").setLevel(Level.SEVERE);
 
@@ -65,7 +66,7 @@ public class TestCases extends ExcelDataProvider{
         if (driver != null) {
             driver.quit();
         }
-
+        System.out.println("Browser closed. Test execution completed.");
     }
     
     @Test(description = "Testcase 01: YouTube About Page Validation")

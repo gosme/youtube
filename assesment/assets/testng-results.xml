@@ -29,44 +29,44 @@
       <![CDATA[testCase05: Search for each of the items given in the stubs: src/test/resources/data.xlsx. Keep scrolling till the sum of each video's views reach 10 Cr.]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-02-28T10:53:59Z" name="Test Suite for Buildout" finished-at="2026-02-28T10:56:58Z" duration-ms="179257">
+  <suite started-at="2026-02-28T11:23:42Z" name="Test Suite for Buildout" finished-at="2026-02-28T11:25:58Z" duration-ms="136014">
     <groups>
     </groups>
-    <test started-at="2026-02-28T10:53:59Z" name="Test Cases for Buildout" finished-at="2026-02-28T10:56:58Z" duration-ms="179257">
+    <test started-at="2026-02-28T11:23:42Z" name="Test Cases for Buildout" finished-at="2026-02-28T11:25:58Z" duration-ms="136014">
       <class name="demo.TestCases">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:23:59Z" name="startBrowser" finished-at="2026-02-28T16:24:04Z" duration-ms="5593" status="PASS">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:53:42Z" name="startBrowser" finished-at="2026-02-28T16:53:44Z" duration-ms="1883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method signature="testCase01()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:24:04Z" name="testCase01" description="Testcase 01: YouTube About Page Validation" finished-at="2026-02-28T16:24:10Z" duration-ms="5787" status="PASS">
+        <test-method signature="testCase01()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:53:44Z" name="testCase01" description="Testcase 01: YouTube About Page Validation" finished-at="2026-02-28T16:53:50Z" duration-ms="5564" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[testCase01: Go to YouTube.com and Assert you are on the correct URL.Click on "About" at the bottom of the sidebar.Print the message on the screen.]]>
             </line>
           </reporter-output>
         </test-method> <!-- testCase01 -->
-        <test-method signature="testCase02()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:24:10Z" name="testCase02" description="Testcase 02: Movies Tab Soft Assertions" finished-at="2026-02-28T16:24:14Z" duration-ms="3832" status="PASS">
+        <test-method signature="testCase02()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:53:50Z" name="testCase02" description="Testcase 02: Movies Tab Soft Assertions" finished-at="2026-02-28T16:53:53Z" duration-ms="3920" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[testCase02: Go to the "Films" or "Movies" tabIn the "Top Selling" section, scroll to the extreme right.Apply a Soft Assert on whether the movie is marked "A" for Mature or not.Apply a Soft assert on the movie category to check if it exists ex: "Comedy", "Animation", "Drama".]]>
             </line>
           </reporter-output>
         </test-method> <!-- testCase02 -->
-        <test-method signature="testCase03()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:24:14Z" name="testCase03" description="Testcase 03: Music Playlist Validation" finished-at="2026-02-28T16:24:19Z" duration-ms="5273" status="PASS">
+        <test-method signature="testCase03()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:53:53Z" name="testCase03" description="Testcase 03: Music Playlist Validation" finished-at="2026-02-28T16:53:58Z" duration-ms="4656" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[testCase03: Go to the "Music" tab.In the 1st section, print the name of the playlist on the most right.Soft Assert on whether the number of tracks listed is less than or equal to 50.]]>
             </line>
           </reporter-output>
         </test-method> <!-- testCase03 -->
-        <test-method signature="testCase04()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:24:19Z" name="testCase04" description="Testcase 04: News Posts Likes Summary" finished-at="2026-02-28T16:24:30Z" duration-ms="11099" status="PASS">
+        <test-method signature="testCase04()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:53:58Z" name="testCase04" description="Testcase 04: News Posts Likes Summary" finished-at="2026-02-28T16:54:09Z" duration-ms="11059" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[testCase04: Go to the "News" tab.Print the title and body of the 1st 3 "Latest News Posts",along with the sum of the number of likes on all 3 of them. No likes given means 0.]]>
             </line>
           </reporter-output>
         </test-method> <!-- testCase04 -->
-        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:24:31Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T16:24:42Z" duration-ms="11382" status="PASS">
+        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:54:10Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T16:54:21Z" duration-ms="11644" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -80,7 +80,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCase05 -->
-        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:24:42Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T16:24:46Z" duration-ms="3613" status="PASS">
+        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:54:21Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T16:54:27Z" duration-ms="5776" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,7 +94,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCase05 -->
-        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:24:46Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T16:24:53Z" duration-ms="7573" status="PASS">
+        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:54:27Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T16:54:32Z" duration-ms="5375" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -108,7 +108,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCase05 -->
-        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:24:53Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T16:25:32Z" duration-ms="38932" status="PASS">
+        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:54:32Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T16:54:37Z" duration-ms="4388" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -122,7 +122,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCase05 -->
-        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:25:32Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T16:26:57Z" duration-ms="85160" status="PASS">
+        <test-method signature="testCase05(java.lang.String)[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:54:37Z" name="testCase05" description="Testcase 05: Search Items &amp; Views Threshold" data-provider="excelData" finished-at="2026-02-28T16:55:58Z" duration-ms="80921" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -136,7 +136,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testCase05 -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:26:57Z" name="endTest" finished-at="2026-02-28T16:26:58Z" duration-ms="592" status="PASS">
+        <test-method is-config="true" signature="endTest()[pri:0, instance:demo.TestCases@1a20270e]" started-at="2026-02-28T16:55:58Z" name="endTest" finished-at="2026-02-28T16:55:58Z" duration-ms="416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
