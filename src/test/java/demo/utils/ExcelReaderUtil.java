@@ -1,5 +1,5 @@
 package demo.utils;
-
+import static demo.utils.Helpers.logCommand;
 
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -14,7 +14,7 @@ public class ExcelReaderUtil {
 
     public static Object[][] readExcelData(String fileName) {
         try {
-            System.out.println("Reading data");
+            logCommand("Reading data from file", fileName);
             InputStream file = new DataInputStream(new FileInputStream(fileName));
             Workbook workbook = new XSSFWorkbook(file);
             Sheet sheet = workbook.getSheetAt(0); // read the first sheet
@@ -27,16 +27,14 @@ public class ExcelReaderUtil {
                 Row row = sheet.getRow(i);
                 List<Object> columns = new ArrayList<>();
                 
-                // for (int j = row.getFirstCellNum(); j < findLastNonBlankColumn(row); j++) {
                 Cell cell = row.getCell(0);
                 columns.add(getCellValue(cell));
-                // }
                 
                 records.add(columns.toArray());
             }
 
             workbook.close();
-            System.out.println("Here is the data: "+records.toString());
+            logCommand("Here is the data", records.toString());
             return records.toArray(new Object[0][]);
 
         } catch (Exception e) {
@@ -44,7 +42,7 @@ public class ExcelReaderUtil {
             return null;
         }
     }
-    // Find the last non-blank row in a sheet
+
     public static int findLastNonBlankRow(Sheet sheet) {
         int lastNonBlankRowNum = -1;
         if (sheet != null) {
@@ -58,7 +56,6 @@ public class ExcelReaderUtil {
         return lastNonBlankRowNum;
     }
 
-    // Find the last non-blank column in a given row
     public static int findLastNonBlankColumn(Row row) {
         int lastNonBlankColumnNum = -1;
         if (row != null) {
@@ -72,7 +69,6 @@ public class ExcelReaderUtil {
         return lastNonBlankColumnNum;
     }
 
-    // Helper method to determine if a row is blank
     private static boolean isRowBlank(Row row) {
         for (int cellNum = row.getFirstCellNum(); cellNum < row.getLastCellNum(); cellNum++) {
             Cell cell = row.getCell(cellNum, Row.MissingCellPolicy.RETURN_BLANK_AS_NULL);

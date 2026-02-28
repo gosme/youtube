@@ -22,7 +22,7 @@ dependencies {
     testImplementation 'org.testng:testng:6.9.10'
 
     // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
-    implementation 'org.seleniumhq.selenium:selenium-java:4.21.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.41.0'
     implementation 'org.apache.poi:poi-ooxml:4.1.2'
 
 }
@@ -58,7 +58,7 @@ test {
 
 }
 
-mainClassName = 'demo.App'
+application { mainClass = 'demo.App' }
 
 checkstyle {
     toolVersion = '8.45' // Check for the latest version compatible with your setup
